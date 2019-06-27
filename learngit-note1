@@ -1,0 +1,50 @@
+使用命令 `git config` 命令的 `--golbal`  表示这台机器上所有的Git仓库都使用这个配置
+
+命令行：
+
+        $ git config --global user.name "Your Name" 
+        $ git config --global user.email "email@example.com"
+
+
+### 创建一个版本库
+代码
+
+        
+        $ mkdir learngit
+        $ cd learngit
+        $ pwd
+        /Users/name/learngit
+
+`pwd` 命令用于显示当前目录
+
+第二步，通过 `git init` 命令把这个目录变成Git可以管理的仓库：
+
+代码：
+
+        $ git init
+        Initialized empty Git repository in /Users/name/learngit/.git/
+        
+
+先这里再明确一下，所有的版本控制系统，其实只能跟踪文本文件的改动，比如TXT文件，网页，所有的程序代码等等，Git也不例外。
+
+使用标准的UTF-8编码
+
+
+### 创建一个文件，添加到仓库
+
+创建一个`readme.txt`文件，放到`learngit`目录下（子目录也行）
+
+1. 用命令`git add`告诉Git,把文件添加到仓库：
+
+        $ git add readme.txe
+        
+
+2. 用命令`git commit`告诉Git,把文件提交到仓库：
+
+        $ git commit -m "wrote a readme file"
+        
+
+`-m` 后面输入的是本次提交的说明，未来可以看改动记录
+
+
+
